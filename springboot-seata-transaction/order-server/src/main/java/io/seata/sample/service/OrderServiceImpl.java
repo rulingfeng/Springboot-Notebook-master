@@ -40,8 +40,8 @@ public class OrderServiceImpl implements OrderService {
      * 2.不添加本地事务：创建订单，扣减库存
      */
     @Override
-//    @GlobalTransactional(name = "fsp-create-order", rollbackFor = Exception.class)
-    @Transactional(rollbackFor = Exception.class)
+    @GlobalTransactional(name = "fsp-create-order", rollbackFor = Exception.class)
+    //@Transactional(rollbackFor = Exception.class)
     public void create(Order order) {
 
         String xid = RootContext.getXID();
