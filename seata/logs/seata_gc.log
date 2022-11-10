@@ -1,0 +1,11 @@
+Java HotSpot(TM) 64-Bit Server VM (25.341-b10) for bsd-amd64 JRE (1.8.0_341-b10), built on Jun 16 2022 16:44:16 by "java_re" with gcc 4.2.1 Compatible Apple LLVM 11.0.0 (clang-1100.0.33.17)
+Memory: 4k page, physical 16777216k(73616k free)
+
+/proc/meminfo:
+
+CommandLine flags: -XX:CMSInitiatingOccupancyFraction=75 -XX:+CMSParallelRemarkEnabled -XX:CompressedClassSpaceSize=260046848 -XX:+DisableExplicitGC -XX:+HeapDumpOnOutOfMemoryError -XX:HeapDumpPath=/Users/rulingfeng/Downloads/seata/logs/java_heapdump.hprof -XX:InitialHeapSize=2147483648 -XX:MaxDirectMemorySize=1073741824 -XX:MaxHeapSize=2147483648 -XX:MaxMetaspaceSize=268435456 -XX:MaxNewSize=1073741824 -XX:MetaspaceSize=134217728 -XX:NewSize=1073741824 -XX:-OmitStackTraceInFastThrow -XX:+PrintGC -XX:+PrintGCTimeStamps -XX:SurvivorRatio=10 -XX:ThreadStackSize=512 -XX:-UseAdaptiveSizePolicy -XX:+UseCMSInitiatingOccupancyOnly -XX:+UseCompressedClassPointers -XX:+UseCompressedOops -XX:+UseParallelGC 
+303.984: [GC (Allocation Failure)  874496K->33102K(2010112K), 0.1458600 secs]
+7870.817: [GC (Allocation Failure)  907598K->16873K(2010112K), 0.1306620 secs]
+20023.421: [GC (Allocation Failure)  891369K->15448K(2010112K), 0.1260968 secs]
+32367.061: [GC (Allocation Failure)  889944K->15408K(2010112K), 0.0920484 secs]
+45696.974: [GC (Allocation Failure)  889904K->15288K(2010112K), 0.0919538 secs]
