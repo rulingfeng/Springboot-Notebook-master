@@ -1,3 +1,13 @@
+seata的使用
+将seata文件夹这个服务需要启动，注册到eureka或其他的注册中心 改file.conf和registry.conf  2个配置文件
+
+分布式事务在于需要调用2个或2个以上的其他服务
+
+此项目order创建订单 调用storaga减库存 再调用account减用户余额， 如果减库存成功了，扣减余额失败了，那么库存是不会回滚的，所以需要用到分布式事务seata
+io.seata.sample.controller.OrderController.create 可以看这个类
+
+
+
 <div align="center">
     <p style="font-size:25px;font-weight: 800;">Springboot-Notebook</p>
 </div>
