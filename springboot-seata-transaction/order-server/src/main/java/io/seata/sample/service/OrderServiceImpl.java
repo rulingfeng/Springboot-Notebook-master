@@ -46,7 +46,7 @@ public class OrderServiceImpl implements OrderService {
 
         String xid = RootContext.getXID();
 
-        //LOGGER.info("------->交易开始");
+        LOGGER.info("------->交易开始");
         //本地方法
         orderDao.create(order);
 
@@ -55,11 +55,11 @@ public class OrderServiceImpl implements OrderService {
         System.out.println(decrease);
 
         //远程方法 扣减账户余额
-        //LOGGER.info("------->扣减账户开始order中");
-//        accountApi.decrease(order.getUserId(), order.getMoney());
-        //LOGGER.info("------->扣减账户结束order中");
+        LOGGER.info("------->扣减账户开始order中");
+        accountApi.decrease(order.getUserId(), order.getMoney());
+        LOGGER.info("------->扣减账户结束order中");
 
-        //LOGGER.info("------->交易结束");
+        LOGGER.info("------->交易结束");
         LOGGER.info("全局事务 xid： {}", xid);
     }
 
